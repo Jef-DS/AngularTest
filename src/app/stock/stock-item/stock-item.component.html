@@ -1,0 +1,6 @@
+<article class="stock-container" *ngFor="let stock of stocks; index as i">
+  <H3 class="name"> {{ stock.name }}</H3>
+  <div class="code">{{ stock.code }}</div>
+  <div class="price"> {{ stock.price }} </div>
+  <button (click)="toggleFavourite($event, i)" *ngIf="!stock.favourite">Add to favourites</button>
+</article>
