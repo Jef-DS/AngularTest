@@ -1,7 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+  <p [textContent]="title"></p>
   <h1>
     Welcome to {{ title }}, {{ name }}!
   </h1>
+  <app-create-stock></app-create-stock>
   <app-stock-item></app-stock-item>
+  <app-stock-item1 [stock]="stockObj"
+       (toggleFavourite)="onSwitchFavourite($event)"></app-stock-item1>
 </div>

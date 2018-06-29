@@ -1,0 +1,19 @@
+.pricehigherorequal {
+    color: green;
+}
+.pricelower {
+    color: red;
+}
+.stock-container {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    padding: .5em;
+    background-color: burlywood;
+}
+.stock-container > .name, .stock-container > .code{
+    display: inline-block;
+}
+.stock-container >.name:after {
+    content: ' - '
+}
